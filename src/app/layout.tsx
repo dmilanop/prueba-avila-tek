@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Prueba AvilaTek",
-  description: "Prueba de AvilaTek",
+  description: "Prueba Front-End de AvilaTek",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
