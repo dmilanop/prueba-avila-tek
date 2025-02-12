@@ -8,6 +8,7 @@ import ProductsCard from "./components/cards/products/ProductsCard";
 import FeaturesCard from "./components/cards/features/FeaturesCard";
 import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 import Button from "./components/button/Button";
+import FAQ from "./components/faq/FAQ";
 
 export default function Home() {
   return (
@@ -161,6 +162,21 @@ export default function Home() {
                 priority
                 className="w-auto"
             />
+        </section>
+
+        {/* FAQS Section */}
+        <section className="flex flex-col gap-8 justify-center items-center mt-5  xl:px-[340px]">
+            <header className="flex flex-col justify-center items-center gap-5 px-10">
+                <h1 className="text-primary_color text-2xl text-center font-bold md:text-3xl">
+                    Frequently asked questions
+                </h1>
+
+                <p className="text-secondary_color text-base text-center font-normal md:text-lg">
+                    Everything you need to know about the product and billing.
+                </p>
+            </header>
+
+            <FAQ />
         </section>
       </main>
     </>
