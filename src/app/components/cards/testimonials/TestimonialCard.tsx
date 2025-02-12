@@ -12,7 +12,7 @@ export default function TestimonialCard() {
                 testimonials.map((testimonial) => (
                     <div
                         key={testimonial.id}
-                        className="flex flex-col justify-between w-[90%] bg-gray-500 opacity-90 rounded-xl md:flex md:flex-row md:justify-between md:w-[90%]"
+                        className="flex flex-col justify-between w-[90%] bg-gray-500 opacity-90 rounded-xl md:flex md:flex-row md:justify-start md:w-[90%]"
                     >
                         <Image
                             src={testimonial.image}
@@ -35,7 +35,7 @@ export default function TestimonialCard() {
                             <span className="flex flex-col gap-5 items-center md:flex md:flex-col md:items-start">
                                 <h5 className="text-lg font-medium text-white md:text-base md:font-light lg:text-lg lg:font-medium">{testimonial.name}</h5>
 
-                                <div>
+                                <div className="flex flex-col items-center md:flex md:flex-col md:items-start">
                                     <h6 className="text-base font-medium text-white">{testimonial.profession}</h6>
 
                                     <h5 className="text-base font-medium text-white">{testimonial.company_name}</h5>

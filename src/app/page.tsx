@@ -10,6 +10,7 @@ import Button from "./components/button/Button";
 import FAQ from "./components/faq/FAQ";
 import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 import TestimonialPagination from "./components/cards/testimonials/TestimonialPagination";
+import BannerCallToAction from "./components/banner/BannerCallToAction";
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5 gap-20">
+      <main className="flex flex-col items-center mt-5 gap-40">
         {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
@@ -182,7 +183,7 @@ export default function Home() {
 
         {/* Testimonial Card Section */}
         <section className="flex flex-col w-full px-5 gap-14">
-            <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0">
+            <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0 lg:px-16">
                 <header className="flex flex-col gap-5">
                     <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl lg:text-left lg:text-4xl">Don't just take our word for it</h1>
                     
@@ -203,6 +204,11 @@ export default function Home() {
             </article>
 
             <TestimonialCard />
+        </section>
+
+        {/* CTA Section */}
+        <section className="flex flex-col items-center">
+            <BannerCallToAction />
         </section>
       </main>
     </>
