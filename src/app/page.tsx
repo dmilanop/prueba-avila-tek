@@ -3,9 +3,11 @@ import Form from "./components/form/Form";
 import Navbar from "./components/navbar/Navbar";
 import userOverTimeChart from "@/app/assets/charts/users-over-time.svg";
 import activeUsers from "@/app/assets/charts/active-users.svg";
+import collagePersons from "@/app/assets/persons/collage-persons.svg";
 import ProductsCard from "./components/cards/products/ProductsCard";
 import FeaturesCard from "./components/cards/features/FeaturesCard";
 import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
+import Button from "./components/button/Button";
 
 export default function Home() {
   return (
@@ -125,6 +127,40 @@ export default function Home() {
         {/* Testimonial section */}
         <section className="flex justify-center w-full">
             <TestimonialCard />
+        </section>
+
+        {/* CTA Section */}
+        <section className="flex flex-col-reverse items-center gap-10 px-3 xl:flex xl:flex-row xl:items-center xl:justify-between ">
+            <article className="flex flex-col items-center gap-5 xl:flex xl:felx-col xl:items-start">
+                <header className="flex flex-col items-center gap-1 xl:flex xl:felx-col xl:items-start">
+                    <h1 className="text-2xl font-bold text-primary_color md:text-5xl">No long-term contracts.</h1>
+
+                    <h1 className="text-2xl font-bold text-primary_color md:text-5xl">No catches.</h1>
+                </header>
+
+                <p className="text-lg text-secondary_color md:text-2xl">
+                    Start your 30-day free trial today.
+                </p>
+
+                <footer className="flex gap-4 items-center">
+                    <Button
+                        name="Learn More"
+                        className="text-sm font-medium border rounded-lg text-gray-800 border-gray-300 p-2 hover:text-primary_color md:p-3"
+                    />
+
+                    <Button
+                        name="Get Started"
+                        className="text-sm font-medium rounded-lg bg-quinary_color text-white p-2 hover:bg-violet-700 md:p-3"
+                    />
+                </footer>
+            </article>
+
+            <Image
+                src={collagePersons}
+                alt="Persons"
+                priority
+                className="w-auto"
+            />
         </section>
       </main>
     </>
