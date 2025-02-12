@@ -12,7 +12,7 @@ export default function Navbar() {
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
     
     return (
-        <nav className="flex items-center justify-between h-20 px-4 md:px-5 lg:px-24 xl:px-60 border border-red-500 w-full">
+        <nav className="flex items-center justify-between h-20 px-4 md:px-5 lg:px-24 xl:px-60 w-full">
             <section className="flex items-center md:gap-8">
                 <div className="flex items-center gap-1">
                     <Image

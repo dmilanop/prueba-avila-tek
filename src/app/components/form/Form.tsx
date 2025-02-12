@@ -1,6 +1,4 @@
 import Button from "../button/Button";
-import { GoQuestion } from "react-icons/go";
-
 
 export default function Form() {
     return (
