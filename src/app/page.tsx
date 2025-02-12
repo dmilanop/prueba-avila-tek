@@ -45,14 +45,14 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5">
+      <main className="flex flex-col items-center mt-5 gap-40">
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
                 <h6 className="text-xs font-medium text-tertiary_color border-2 border-purple-200 bg-purple-50 py-[6px] px-3 rounded-2xl">
                     Integrations
                 </h6>
 
-                <h1 className="text-2xl font-bold text-primary_color md:text-3xl">
+                <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl">
                     Get more value from your tools
                 </h1>
 
@@ -63,6 +63,37 @@ export default function Home() {
             </article>
             
             <ProductsCard />
+        </section>
+
+        <section className="flex flex-col items-center">
+            <article className="flex flex-col items-centers gap-20">
+                <header className="flex flex-col items-center gap-4">
+                    <h2 className="text-2xl text-center px-2 font-bold text-primary_color md:text-3xl">
+                        Unleash the full power of data
+                    </h2>
+
+                    <p className="text-base px-2 text-center text-secondary_color md:text-lg">
+                        Everything you need to convert, engage, and retain more users.
+                    </p>
+                </header>
+
+                <ul className="flex flex-col items-center gap-20 md:flex md:flex-row md:gap-20 md:justify-between md:px-2">
+                    <li className="flex flex-col items-center gap-5">
+                        <h5 className="text-6xl font-bold text-quinary_color">400+</h5>
+                        <h6 className="text-xl font-semibold text-primary_color ">Projects completed</h6>
+                    </li>
+
+                    <li className="flex flex-col items-center gap-5">
+                        <h5 className="text-6xl font-bold text-quinary_color">600%</h5>
+                        <h6 className="text-xl font-semibold text-primary_color ">Return on investment</h6>
+                    </li>
+
+                    <li className="flex flex-col items-center gap-5">
+                        <h5 className="text-6xl font-bold text-quinary_color">10k</h5>
+                        <h6 className="text-xl font-semibold text-primary_color ">Global downloads</h6>
+                    </li>
+                </ul>
+            </article>
         </section>
       </main>
     </>
