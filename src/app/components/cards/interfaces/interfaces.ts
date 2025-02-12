@@ -20,6 +20,6 @@ export interface Testimonials {
     name: string;
     stars: number[];
     profession: string;
-    comment: string;
+    comment?: string;
     company_name?: string
 }
