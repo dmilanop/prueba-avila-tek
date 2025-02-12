@@ -180,7 +180,7 @@ export default function Home() {
             <FAQ />
         </section>
 
-        {/* Testimonial Carousel Section */}
+        {/* Testimonial Card Section */}
         <section className="flex flex-col w-full px-5 gap-14">
             <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0">
                 <header className="flex flex-col gap-5">
