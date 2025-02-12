@@ -5,6 +5,7 @@ import userOverTimeChart from "@/app/assets/charts/users-over-time.svg";
 import activeUsers from "@/app/assets/charts/active-users.svg";
 import ProductsCard from "./components/cards/products/ProductsCard";
 import FeaturesCard from "./components/cards/features/FeaturesCard";
+import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 
 export default function Home() {
   return (
@@ -119,6 +120,11 @@ export default function Home() {
             </article>
             
             <FeaturesCard />
+        </section>
+
+        {/* Testimonial section */}
+        <section className="flex justify-center w-full">
+            <TestimonialCard />
         </section>
       </main>
     </>
