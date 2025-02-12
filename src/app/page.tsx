@@ -10,6 +10,7 @@ import Button from "./components/button/Button";
 import FAQ from "./components/faq/FAQ";
 import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 import TestimonialPagination from "./components/cards/testimonials/TestimonialPagination";
+import BannerCallToAction from "./components/banner/BannerCallToAction";
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5 gap-20">
+      <main className="flex flex-col items-center mt-5 gap-40">
         {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
@@ -203,6 +204,11 @@ export default function Home() {
             </article>
 
             <TestimonialCard />
+        </section>
+
+        {/* CTA Section */}
+        <section className="flex flex-col items-center">
+            <BannerCallToAction />
         </section>
       </main>
     </>
