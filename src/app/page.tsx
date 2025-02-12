@@ -3,6 +3,7 @@ import Form from "./components/form/Form";
 import Navbar from "./components/navbar/Navbar";
 import userOverTimeChart from "@/app/assets/charts/users-over-time.svg";
 import activeUsers from "@/app/assets/charts/active-users.svg";
+import ProductsCard from "./components/cards/products/ProductsCard";
 
 export default function Home() {
   return (
@@ -43,6 +44,27 @@ export default function Home() {
             />
         </section>
       </header>
+
+      <main className="flex flex-col items-center mt-5">
+        <section className="flex flex-col items-center gap-12">
+            <article className="flex flex-col items-center gap-6">
+                <h6 className="text-xs font-medium text-tertiary_color border-2 border-purple-200 bg-purple-50 py-[6px] px-3 rounded-2xl">
+                    Integrations
+                </h6>
+
+                <h1 className="text-2xl font-bold text-primary_color md:text-3xl">
+                    Get more value from your tools
+                </h1>
+
+                <p className="text-sm text-center text-secondary_color w-[350px] md:text-base md:w-[600px]">
+                    Connect your tools, connect your teams. With over 100 apps already available in our directory, 
+                    your team's favourite tools are just a click away.
+                </p>
+            </article>
+            
+            <ProductsCard />
+        </section>
+      </main>
     </>
   );
 }
