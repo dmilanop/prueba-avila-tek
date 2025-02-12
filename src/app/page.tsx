@@ -11,6 +11,7 @@ export default function Home() {
       <header className="flex flex-col gap-10 items-center">
         <Navbar />
         
+        {/* Header Section */}
         <section className="flex flex-col items-center py-16 h-[600px] w-[95%] rounded-xl bg-quaternary_color sm:h-[600px] md:w-[85%]">
             <article className="flex flex-col items-center gap-10">
               <header className="flex flex-col items-center gap-2 sm:gap-5">
@@ -30,6 +31,7 @@ export default function Home() {
             </article>
         </section>
 
+        {/* Charts Section */}
         <section className="flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:gap-10">
             <Image
                 alt="User Over Time Chart"
@@ -46,6 +48,7 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col items-center mt-5 gap-40">
+        {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
                 <h6 className="text-xs font-medium text-tertiary_color border-2 border-purple-200 bg-purple-50 py-[6px] px-3 rounded-2xl">
@@ -65,6 +68,7 @@ export default function Home() {
             <ProductsCard />
         </section>
 
+        {/* Metrics Section */}
         <section className="flex flex-col items-center">
             <article className="flex flex-col items-centers gap-20">
                 <header className="flex flex-col items-center gap-4">
@@ -77,7 +81,7 @@ export default function Home() {
                     </p>
                 </header>
 
-                <ul className="flex flex-col items-center gap-20 md:flex md:flex-row md:gap-20 md:justify-between md:px-2">
+                <ul className="flex flex-col items-center gap-20 md:flex md:flex-row md:gap-20 md:justify-between md:px-2 lg:gap-40">
                     <li className="flex flex-col items-center gap-5">
                         <h5 className="text-6xl font-bold text-quinary_color">400+</h5>
                         <h6 className="text-xl font-semibold text-primary_color ">Projects completed</h6>
@@ -95,6 +99,8 @@ export default function Home() {
                 </ul>
             </article>
         </section>
+
+
       </main>
     </>
   );
