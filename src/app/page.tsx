@@ -182,7 +182,7 @@ export default function Home() {
 
         {/* Testimonial Card Section */}
         <section className="flex flex-col w-full px-5 gap-14">
-            <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0">
+            <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0 lg:px-16">
                 <header className="flex flex-col gap-5">
                     <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl lg:text-left lg:text-4xl">Don't just take our word for it</h1>
                     
