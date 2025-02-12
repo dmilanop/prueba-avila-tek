@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import userOverTimeChart from "@/app/assets/charts/users-over-time.svg";
 import activeUsers from "@/app/assets/charts/active-users.svg";
 import ProductsCard from "./components/cards/products/ProductsCard";
+import FeaturesCard from "./components/cards/features/FeaturesCard";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5 gap-40">
+      <main className="flex flex-col items-center mt-5 gap-60">
         {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
@@ -100,7 +101,25 @@ export default function Home() {
             </article>
         </section>
 
+        {/* Features Section */}
+        <section className="flex flex-col items-center gap-12">
+            <article className="flex flex-col items-center gap-6">
+                <h6 className="text-xs font-medium text-tertiary_color border-2 border-purple-200 bg-purple-50 py-[6px] px-3 rounded-2xl">
+                    Features
+                </h6>
 
+                <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl">
+                    Cutting-edge features for advanced analytics
+                </h1>
+
+                <p className="text-sm text-center text-secondary_color w-[350px] md:text-base md:w-[570px]">
+                    Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. 
+                    Trusted by over 4,000 startups.
+                </p>
+            </article>
+            
+            <FeaturesCard />
+        </section>
       </main>
     </>
   );
