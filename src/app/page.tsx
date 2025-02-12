@@ -6,8 +6,10 @@ import activeUsers from "@/app/assets/charts/active-users.svg";
 import collagePersons from "@/app/assets/persons/collage-persons.svg";
 import ProductsCard from "./components/cards/products/ProductsCard";
 import FeaturesCard from "./components/cards/features/FeaturesCard";
-import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 import Button from "./components/button/Button";
+import FAQ from "./components/faq/FAQ";
+import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
+import TestimonialPagination from "./components/cards/testimonials/TestimonialPagination";
 
 export default function Home() {
   return (
@@ -51,7 +53,7 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5 gap-60">
+      <main className="flex flex-col items-center mt-5 gap-20">
         {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
@@ -124,9 +126,9 @@ export default function Home() {
             <FeaturesCard />
         </section>
 
-        {/* Testimonial section */}
+        {/* Testimonial Pagination section */}
         <section className="flex justify-center w-full">
-            <TestimonialCard />
+            <TestimonialPagination />
         </section>
 
         {/* CTA Section */}
@@ -161,6 +163,46 @@ export default function Home() {
                 priority
                 className="w-auto"
             />
+        </section>
+
+        {/* FAQS Section */}
+        <section className="flex flex-col gap-8 justify-center items-center mt-5  xl:px-[340px]">
+            <header className="flex flex-col justify-center items-center gap-5 px-10">
+                <h1 className="text-primary_color text-2xl text-center font-bold md:text-3xl">
+                    Frequently asked questions
+                </h1>
+
+                <p className="text-secondary_color text-base text-center font-normal md:text-lg">
+                    Everything you need to know about the product and billing.
+                </p>
+            </header>
+
+            <FAQ />
+        </section>
+
+        {/* Testimonial Card Section */}
+        <section className="flex flex-col w-full px-5 gap-14">
+            <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0">
+                <header className="flex flex-col gap-5">
+                    <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl lg:text-left lg:text-4xl">Don't just take our word for it</h1>
+                    
+                    <p className="text-base text-center font-normal text-secondary_color md:text-lg lg:text-left">Hear from some of our amazing customers who are automating their finances</p>
+                </header>
+
+                <footer className="flex gap-4 items-center">
+                    <Button
+                        name="Our customers"
+                        className="text-sm font-medium border rounded-lg text-gray-800 border-gray-300 p-2 hover:text-primary_color md:px-3 md:py-3"
+                    />
+
+                    <Button
+                        name="Create account"
+                        className="text-sm font-medium rounded-lg bg-quinary_color text-white p-2 hover:bg-violet-700 md:px-3 md:py-3"
+                    />
+                </footer>
+            </article>
+
+            <TestimonialCard />
         </section>
       </main>
     </>
