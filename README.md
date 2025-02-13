@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Front-End AvilaTek
 
-## Getting Started
+## Descripción
+Este proyecto consiste en replicar un diseño proporcionado en Figma, asegurando que sea completamente responsive. El objetivo principal del proyecto es promocionar un servicio de integraciones con diversas aplicaciones. Cada aplicación es presentada como un producto dentro del proyecto, destacando sus características y beneficios. Además, el proyecto incluye secciones de testimonios de usuarios satisfechos y llamadas a la acción para atraer y convertir a nuevos usuarios. La interfaz ha sido cuidadosamente diseñada para proporcionar una experiencia de usuario intuitiva y atractiva.
 
-First, run the development server:
+## Tecnologías Utilizadas
+- **React 19**
+- **Next.js 15**
+- **Tailwind CSS**
+- **TypeScript**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Librerías Utilizadas
+- **Tailwindcss Motion**: para las animaciones.
+- **React Icons**: para los íconos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura de carpetas
+La estructura de carpetas del proyecto está organizada por tipo y características (features) para mantener el código limpio, modular y fácil de mantener.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Instalación
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando: npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Inicializar el proyecto
+Después de haber instalado todas las dependencias necesarias del proyecto utilizando npm install, sigue estos pasos para iniciar el servidor de desarrollo:
 
-## Learn More
+1- Abre tu terminal: Navega hasta el directorio raíz del proyecto.
 
-To learn more about Next.js, take a look at the following resources:
+2- Ejecuta el siguiente comando para iniciar el servidor de desarrollo: npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Despliegue del proyecto y url
+Despliegue: Vercel
+URL: https://prueba-avila-tek-sepia.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Vista previa del proyecto
 
-## Deploy on Vercel
+![alt text](public/capture-1.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![alt text](public/capture-2.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![alt text](public/capture-3.png)
+
