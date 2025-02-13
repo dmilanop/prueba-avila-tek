@@ -15,7 +15,7 @@ export default function Dropdown({ name, className, open_icon, close_icon, onCli
                 {
                     isOpen ? (
                         <div className="flex flex-col relative">
-                            <button onClick={() => setIsOpen(!isOpen)}>
+                            <button className="motion-preset-pop motion-duration-1500" onClick={() => setIsOpen(!isOpen)}>
                                 {close_icon}
                             </button>
 
@@ -35,7 +35,7 @@ export default function Dropdown({ name, className, open_icon, close_icon, onCli
 
                     )  :
                     (
-                        <button onClick={() => setIsOpen(!isOpen)}>
+                        <button className="motion-preset-pop motion-duration-1500" onClick={() => setIsOpen(!isOpen)}>
                             {open_icon}
                         </button>
                     )

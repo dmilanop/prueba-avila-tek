@@ -29,10 +29,10 @@ export default function FAQ() {
                                 <button className="text-3xl">
                                     {
                                         isOpen[index] ? (
-                                            <CiCircleMinus className="text-slate-600" onClick={() => toggleQuestion(index)}/>
+                                            <CiCircleMinus className="text-slate-600 motion-scale-in-[0.81] motion-ease-bounce" onClick={() => toggleQuestion(index)}/>
                                         ) :
                                         (
-                                            <CiCirclePlus className="text-slate-600" onClick={() => toggleQuestion(index)}/>
+                                            <CiCirclePlus className="text-slate-600 motion-scale-in-[0.81] motion-ease-bounce" onClick={() => toggleQuestion(index)}/>
                                         )
                                     }
                                 </button>
@@ -40,7 +40,7 @@ export default function FAQ() {
 
                             {
                                 isOpen[index] && (
-                                    <p className="flex flex-col text-secondary_color text-sm font-normal py-2 pr-6 w-[90%]">
+                                    <p className="flex flex-col text-secondary_color text-sm font-normal py-2 pr-6 w-[90%] motion-translate-x-in-[0%] motion-translate-y-in-[-50%] motion-duration-[1.13s] motion-ease-spring-smooth">
                                         {faq.answer}
                                     </p>
                                 )

@@ -12,7 +12,7 @@ export default function Navbar() {
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
     
     return (
-        <nav className="flex items-center justify-between h-20 px-4 md:px-5 lg:px-24 xl:px-60 w-full">
+        <nav className="flex items-center justify-between h-20 px-4 md:px-5 lg:px-24 xl:px-60 w-full motion-translate-x-in-[0%] motion-translate-y-in-[-50%] motion-duration-[1.50s]">
             <section className="flex items-center md:gap-8">
                 <div className="flex items-center gap-1">
                     <Image
@@ -39,8 +39,8 @@ export default function Navbar() {
             {/* Navigation Items Responsive */}
             <section className="md:hidden">
                 <Dropdown
-                    close_icon={<IoMdClose className="text-2xl text-primary_color" />}
-                    open_icon={<IoMdMenu className="text-2xl text-primary_color" />}
+                    close_icon={<IoMdClose className="text-2xl text-primary_color motion-preset-pop motion-duration-1500" />}
+                    open_icon={<IoMdMenu className="text-2xl text-primary_color motion-preset-pop motion-duration-1500" />}
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
                 />
 

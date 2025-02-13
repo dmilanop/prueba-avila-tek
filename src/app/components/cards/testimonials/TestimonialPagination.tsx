@@ -19,7 +19,7 @@ export default function TestimonialPagination() {
                 testimonials.slice(currentIndex, currentIndex + 1).map((testimonial) => (
                     <div
                         key={testimonial.id}
-                        className="flex flex-col justify-between w-[90%] bg-quaternary_color rounded-xl md:flex md:flex-row md:justify-between md:w-[90%] lg:w-[70%]"
+                        className="flex flex-col justify-between w-[90%] bg-quaternary_color rounded-xl md:flex md:flex-row md:justify-between md:w-[90%] lg:w-[70%] motion-translate-x-in-[50%] motion-translate-y-in-[0%] motion-duration-[1.13s]"
                     >
                         <Image
                             src={testimonial.image}
@@ -55,7 +55,7 @@ export default function TestimonialPagination() {
                                         <button
                                             key={i}
                                             onClick={() => selectTestimonial(i)}
-                                            className="focus:outline-none"
+                                            className="focus:outline-none motion-preset-blur-right motion-duration-1000"
                                         >
                                             {
                                                 i === currentIndex ? (
