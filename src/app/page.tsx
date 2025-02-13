@@ -11,6 +11,7 @@ import FAQ from "./components/faq/FAQ";
 import TestimonialCard from "./components/cards/testimonials/TestimonialCard";
 import TestimonialPagination from "./components/cards/testimonials/TestimonialPagination";
 import BannerCallToAction from "./components/banner/BannerCallToAction";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -211,6 +212,8 @@ export default function Home() {
             <BannerCallToAction />
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
