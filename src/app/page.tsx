@@ -20,7 +20,7 @@ export default function Home() {
         <Navbar />
         
         {/* Header Section */}
-        <section className="flex flex-col items-center py-16 h-[600px] w-[95%] rounded-xl bg-quaternary_color sm:h-[600px] md:w-[85%]">
+        <section className="flex flex-col items-center py-16 h-[600px] w-[95%] rounded-xl bg-quaternary_color sm:h-[600px] md:w-[85%] motion-preset-slide-right motion-duration-1500">
             <article className="flex flex-col items-center gap-10">
               <header className="flex flex-col items-center gap-2 sm:gap-5">
                 <h1 className="text-4xl text-white font-bold sm:text-6xl">Grow your users.</h1>
@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Charts Section */}
-        <section className="flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:gap-10">
+        <section className="flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:gap-10 motion-preset-slide-right motion-duration-1500">
             <Image
                 alt="User Over Time Chart"
                 src={userOverTimeChart}
@@ -55,7 +55,7 @@ export default function Home() {
         </section>
       </header>
 
-      <main className="flex flex-col items-center mt-5 gap-40">
+      <main className="flex flex-col items-center mt-5 gap-40 motion-preset-slide-right motion-duration-1500">
         {/* Integrations Section */}
         <section className="flex flex-col items-center gap-12">
             <article className="flex flex-col items-center gap-6">
@@ -168,7 +168,7 @@ export default function Home() {
         </section>
 
         {/* FAQS Section */}
-        <section className="flex flex-col gap-8 justify-center items-center mt-5  xl:px-[340px]">
+        <section className="flex flex-col gap-8 justify-center items-center mt-5 md:px-[100px] xl:px-[340px]">
             <header className="flex flex-col justify-center items-center gap-5 px-10">
                 <h1 className="text-primary_color text-2xl text-center font-bold md:text-3xl">
                     Frequently asked questions
