@@ -20,7 +20,7 @@ export default function Home() {
         <Navbar />
         
         {/* Header Section */}
-        <section className="flex flex-col items-center py-16 h-[600px] w-[95%] rounded-xl bg-quaternary_color sm:h-[600px] md:w-[85%] motion-preset-slide-right motion-duration-1500">
+        <section className="flex flex-col items-center -z-10 py-16 h-[600px] w-[95%] rounded-xl bg-quaternary_color sm:h-[600px] md:w-[85%] motion-preset-slide-right motion-duration-1500">
             <article className="flex flex-col items-center gap-10">
               <header className="flex flex-col items-center gap-2 sm:gap-5">
                 <h1 className="text-4xl text-white font-bold sm:text-6xl">Grow your users.</h1>
