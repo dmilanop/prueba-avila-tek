@@ -17,7 +17,7 @@ export default function Form() {
             </div>
 
             <p className="text-sm text-purple-200">
-                We care about your data in our <span className="border-b border-purple-200">privacy policy</span>.
+                We care about your data in our <span className="border-b border-purple-200 cursor-pointer">privacy policy</span>.
             </p>
         </form>
     )
