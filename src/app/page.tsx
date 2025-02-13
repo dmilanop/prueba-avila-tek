@@ -69,7 +69,7 @@ export default function Home() {
 
                 <p className="text-sm text-center text-secondary_color w-[350px] md:text-base md:w-[600px]">
                     Connect your tools, connect your teams. With over 100 apps already available in our directory, 
-                    your team's favourite tools are just a click away.
+                    your teams favourite tools are just a click away.
                 </p>
             </article>
             
@@ -186,7 +186,7 @@ export default function Home() {
         <section className="flex flex-col w-full px-5 gap-14">
             <article className="flex flex-col gap-10 items-center lg:flex lg:flex-row lg:justify-between lg:items-start lg:gap-0 lg:px-16">
                 <header className="flex flex-col gap-5">
-                    <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl lg:text-left lg:text-4xl">Don't just take our word for it</h1>
+                    <h1 className="text-2xl text-center font-bold text-primary_color md:text-3xl lg:text-left lg:text-4xl">Dont just take our word for it</h1>
                     
                     <p className="text-base text-center font-normal text-secondary_color md:text-lg lg:text-left">Hear from some of our amazing customers who are automating their finances</p>
                 </header>
