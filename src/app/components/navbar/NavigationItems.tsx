@@ -35,8 +35,8 @@ export default function NavigationItems({ className }: NavigationItemsProps) {
                                 item.name === "Products" || item.name === "Resources" ? (
                                     <Dropdown
                                         name={item.name}
-                                        open_icon={<IoIosArrowDown />}
-                                        close_icon={<IoIosArrowUp />}
+                                        open_icon={<IoIosArrowDown className="motion-preset-pop motion-duration-1500" />}
+                                        close_icon={<IoIosArrowUp  className="motion-preset-pop motion-duration-1500"/>}
                                     />
                                 ) :
                                 (

@@ -19,8 +19,8 @@ export default function FAQ() {
             {
                 faqs.map((faq, index) => (
                     <div key={index} className="flex flex-col justify-start items-center w-full px-5">
-                        <details className={`flex flex-col ${index === faqs.length - 1 ? "" : "border-b-2"} w-full py-6`}>
-                            <summary className="flex justify-between items-center">
+                        <div className={`flex flex-col ${index === faqs.length - 1 ? "" : "border-b-2"} w-full py-6`}>
+                            <div className="flex justify-between items-center">
                                 <h6 className="text-normal font-medium text-primary_color">
                                     {faq.question}
                                 </h6>
@@ -35,7 +35,7 @@ export default function FAQ() {
                                         )
                                     }
                                 </button>
-                            </summary>
+                            </div>
 
                             {
                                 isOpen[index] && (
@@ -44,7 +44,7 @@ export default function FAQ() {
                                     </p>
                                 )
                             }
-                        </details>
+                        </div>
                     </div>
                 ))
             }
