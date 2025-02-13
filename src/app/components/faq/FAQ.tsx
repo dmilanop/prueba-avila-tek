@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { faqs } from "@/data/faq";
-import Dropdown from "../dropdown/Dropdown";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 

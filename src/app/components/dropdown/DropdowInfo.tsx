@@ -50,7 +50,7 @@ export default function DropdownInfo ({ className }: DropdownInfoProps) {
                 <Image src={person} alt="Person" className="w-[180px] rounded-xl"/>
 
                 <span className="flex flex-col gap-1">
-                    <h6 className="text-sm font-semibold text-primary_color">We've just released an update!</h6>
+                    <h6 className="text-sm font-semibold text-primary_color">Weve just released an update!</h6>
 
                     <p className="text-xs text-gray-500">Check out the all new dashboard view. Pages now load faster.</p>
                 </span>
